@@ -1,5 +1,7 @@
 var ctrl = require('../controllers/main');
 
 module.exports = function(app) {
-  app.get('/', ctrl.index);
+  app.get('/about', ctrl.about);
+  app.get('/signin', ctrl.signin);
+  app.get('/news', ctrl.news);
 };
